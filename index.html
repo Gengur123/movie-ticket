@@ -9,17 +9,30 @@
     <title></title>
   </head>
   <body>
+    <div class=container>
     <form>
-      <fieldset id="group1">
-        <input type="radio" value="value1" name="group1">
-        <input type="radio" value="value2" name="group1">
-      </fieldset>
-    
-      <fieldset id="group2">
-        <input type="radio" value="value1" name="group2">
-        <input type="radio" value="value2" name="group2">
-        <input type="radio" value="value3" name="group2">
-      </fieldset>
+      <h1>Welcome to Epicodus Movie Theatre!</h1>
+      <br>
+      <p>What movie would you like to see?</p>
+      <select class="form-control" id="movie"> 
+        <option value="R">Mortal Kombat</option>
+        <option value="PG">Old Movie</option>
+      </select>
+
+      <br>
+      <p>What time do you want to see the movie?</p>
+      <select class="form-control" id="time"> 
+        <option value="morning">8-10am</option>
+        <option value="afternoon">1-3pm</option>
+      </select>
+
+
+      <br>
+      <p>How old are you?</p>
+      <input type="number" id="age" name="age" class="form-control">
+      <br>
       <button type="submit" class="btn btn-success">Submit Survey</button>
     </form>
+    </div>
   </body>
+
